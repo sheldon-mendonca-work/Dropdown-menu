@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classes from "./NewChip.module.css";
 import { ChipsContext } from "../store/chips-context";
 import ChipInput from "./ChipInput";

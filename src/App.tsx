@@ -13,6 +13,7 @@ function App() {
           <li>Add items by mouse clicking on list item.</li>
           <li>Add items by using "Up", "Down" and "Enter" keys on keyboard.</li>
           <li>Click on "X" in input chips to remove it.</li>
+          <li>Check out the <a href='https://github.com/sheldon-mendonca-work/Dropdown-menu' target="_blank" rel="noopener noreferrer">code.</a></li>
         </ol>
       </div>
       <NewChip />
