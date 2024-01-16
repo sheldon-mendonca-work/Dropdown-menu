@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NewChip from './components/NewChip';
+import { ChipsProvider } from './store/chips-context';
+import classes from './App.module.css';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChipsProvider>
+      <div className={classes.info}>
+        <h1>Pick Users</h1>
+        <h3>Features: </h3>
+        <ol>
+          <li>Add items by mouse clicking on list item.</li>
+          <li>Add items by using "Up", "Down" and "Enter" keys on keyboard.</li>
+          <li>Click on "X" in input chips to remove it.</li>
+        </ol>
+      </div>
+      <NewChip />
+    </ChipsProvider>
   );
 }
 
